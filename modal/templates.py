@@ -1,23 +1,23 @@
-class Containers:
+class Templates:
     @staticmethod
-    def get_containers():
+    def get_templates():
         # lay thong tin tat ca nguoi dung va so container
         pass
 
     @staticmethod
-    def get_container(container_id):
+    def get_template(template_id):
         pass
 
     @staticmethod
-    def create_container(container):
+    def create_template(template):
         pass
 
     @staticmethod
-    def edit_container(container):
+    def edit_template(template):
         pass
 
     @staticmethod
-    def del_container(container_id):
+    def del_template(template_id):
         pass
 
     @staticmethod
@@ -25,6 +25,6 @@ class Containers:
         pass
 
 
-class Container:
-    def __init__(self, name, template, user_id, cpu, memory, note):
+class Template:
+    def __init__(self, name, image_path, team, note, create_date, size, group):
         pass
