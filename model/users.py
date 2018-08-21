@@ -1,18 +1,24 @@
-from modal.containers import Containers
-
+from model.containers import Containers
+from model.connect_db import DatabaseDriver
 
 class Users:
+
     @staticmethod
     def confirm_account(email, password):
-        pass
+        query = 'select * from m_user join s_user on m_user.id = s_user.user_id and m_user.last_update_date = s_user.last_update_date where m_user.email = ? and s_user.password = ?'
+        args = [email, password]
+        result = DatabaseDriver().query_db(query, args, one = True)
+        return (result is not None) and (len(result) != 0)
 
     @staticmethod
     def get_users():
-        # lay thong tin tat ca nguoi dung va so container
+        '''get info user and statistic container'''
         pass
 
     @staticmethod
     def get_user(user_id):
+        ''''''
+
         pass
 
     @staticmethod

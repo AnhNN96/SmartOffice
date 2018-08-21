@@ -1,7 +1,7 @@
 class Templates:
     @staticmethod
     def get_templates():
-        # lay thong tin tat ca nguoi dung va so container
+        '''get info user and statistic container'''
         pass
 
     @staticmethod
